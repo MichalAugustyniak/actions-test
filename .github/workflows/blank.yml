@@ -44,5 +44,9 @@ jobs:
       - name: Print an actor
         run: echo ${{github.actor}}
 
-      - name: Ping Google DNS
-        run: ping 8.8.8.8
+      # Pinging don't work
+      # - name: Ping Google DNS
+      #  run: ping 8.8.8.8
+
+      - name: Send GET request to Google
+        run: curl google.com
