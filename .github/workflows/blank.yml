@@ -50,3 +50,12 @@ jobs:
 
       - name: Send GET request to Google
         run: curl google.com
+
+      - name: Print TEST_ENV_VARIABLE
+        run: echo $TEST_ENV_VARIABLE
+
+      - name: Print TEST_REPO_VARIABLE
+        run: echo ${{vars.TEST_REPO_VARIABLE}}
+
+      - name: Print TEST_SECRET
+        run: echo ${{secrets.TEST_SECRET}}
