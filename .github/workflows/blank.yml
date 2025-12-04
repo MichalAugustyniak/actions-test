@@ -43,3 +43,6 @@ jobs:
 
       - name: Print an actor
         run: echo ${{github.actor}}
+
+      - name: Ping Google DNS
+        run: ping 8.8.8.8
